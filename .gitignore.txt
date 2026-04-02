@@ -1,0 +1,33 @@
+# === NetBeans (Ajustado para múltiplos projetos) ===
+**/nbproject/private/ 
+**/build/ 
+**/nbbuild/ 
+**/dist/ 
+**/nbdist/ 
+**/.mtj.tmp/ 
+
+# === Java (Compilados e Binários) ===
+**/*.class 
+**/*.jar 
+**/*.war 
+**/*.ear 
+
+# === Maven ===
+**/target/ 
+
+# === Outras IDEs (Prevenção de conflitos) ===
+**/.idea/
+**/*.iml
+**/.vscode/
+**/.settings/
+**/.project
+**/.classpath
+
+# === Logs e Temporários ===
+**/logs/
+**/*.log
+**/tmp/
+
+# === Sistema Operacional ===
+.DS_Store 
+Thumbs.db
