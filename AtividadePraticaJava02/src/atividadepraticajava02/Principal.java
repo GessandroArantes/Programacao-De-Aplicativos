@@ -1,6 +1,55 @@
 package atividadepraticajava02;
 
+import java.util.Scanner;
 
+
+   public class Principal {
+
+    public static void main(String[] args) {
+        
+        Conta c = null;
+        Scanner scan = new Scanner(System.in);
+        int opcao;
+        System.out.println("Qual tipo de conta deseja criar para José?");
+        System.out.println("1 - Conta");
+        System.out.println("2 - Conta especial");
+        System.out.println("3 - Conta poupança");
+        opcao = scan.nextInt();
+        switch (opcao) {
+            case 1:
+                c = new Conta(1, "José");
+                break;
+            case 2:
+                c = new ContaEspecial(1, "José", 100.00);
+                break;
+            case 3:
+                c = new ContaPoupanca(1, "José");
+                break;
+        }
+        c.imprimirTipoConta();
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -8,6 +57,8 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
+        
+         Código feito para os exercícios anteriores ao Herança e Polimorfismo.
         Scanner scan = new Scanner(System.in);
         Conta c = null; // Inicializado para evitar erros de compilação
         int contadorNumeroConta = 0, numeroConsulta = 0, opcao = 0;
@@ -38,7 +89,7 @@ public class Principal {
                 case 1:
                     c = new Conta();
                     System.out.println("******* Informe o nome do (a)titular da conta: ");
-                    c.nome_titular = scan.next();
+                    c.nome_titular = scan.nextLine();
 
                     System.out.println("******* \nInforme o saldo atual da conta: ");
                     c.saldo = scan.nextDouble();
@@ -112,6 +163,6 @@ public class Principal {
                     5 - Sair
                     """);
             opcao = scan.nextInt(); // Adicionado para atualizar a variável e permitir a saída do laço
-        }
-    }
-}
+        }*/
+        
+     
